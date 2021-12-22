@@ -1,8 +1,8 @@
 <template>
   <div class="search-bar">
-      <input v-model="search" type="text" placeholder="Inserisci una parola">
-      <button @klick.prevent="">Cerca</button>
-      <button @klick.prevent="">Reset</button>
+      <input v-model="searchText" type="text" placeholder="Inserisci una parola">
+      <button @click="$emit('search', searchText)">Cerca</button>
+      <button>Reset</button>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
     name: 'SearchBar',
     data(){
         return{
-            search: ""
+            searchText: ""
         }
     }
 

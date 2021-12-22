@@ -1,6 +1,6 @@
 <template>
   <div class="lista">
-      <Oggetto/>
+      <Oggetto :Oggetti="Oggetti"/>
       <h1>contenuto lista</h1>
   </div>
 </template>
@@ -14,13 +14,13 @@ export default {
     components: {
         Oggetto
     },
+    props: {
+        Oggetti: Array
+    },
     data(){
         return{
             Oggetti: []
         }
-    },
-    created(){
-        
     }
 }
 </script>

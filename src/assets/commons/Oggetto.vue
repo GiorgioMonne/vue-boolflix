@@ -8,7 +8,7 @@
 export default {
     name: 'Oggetto',
     props: {
-        info : null
+        Oggetti: Array
     }
 }
 </script>
