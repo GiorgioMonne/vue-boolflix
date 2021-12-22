@@ -16,11 +16,6 @@ export default {
     },
     props: {
         Oggetti: Array
-    },
-    data(){
-        return{
-            Oggetti: []
-        }
     }
 }
 </script>
